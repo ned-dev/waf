@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<rate-limit-settings>
+
+    <!-- Rate limiter per URL. Supports EXACT and LIKE match -->
+    <add description="Back Office URLs rate limiter" url="component/test/" match="like" requests="80" minutes="1" id="checkout" />
+    <add description="Login rate limiter" url="login" match="like" requests="30" minutes="1" id="login" />
+
+</rate-limit-settings>
